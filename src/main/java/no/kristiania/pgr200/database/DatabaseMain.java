@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.sql.*;
 
 public class DatabaseMain {
+
     public static void createTable() {
 
         String url = "jdbc:postgresql://localhost:5432/postgres";
@@ -15,11 +16,10 @@ public class DatabaseMain {
         try(Connection conn = DriverManager.getConnection(url);
                 Statement statement = conn.createStatement()){
             statement.execute(sql);
-        }   catch(SQLException e) {
+          }   catch(SQLException e) {
             System.out.println(e.getMessage());
         }
     }
-
 
 
 

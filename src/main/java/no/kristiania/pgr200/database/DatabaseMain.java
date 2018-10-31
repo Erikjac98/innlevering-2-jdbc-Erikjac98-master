@@ -3,6 +3,8 @@ package no.kristiania.pgr200.database;
 import javax.swing.plaf.nimbus.State;
 import java.io.IOException;
 import java.sql.*;
+import org.junit.*;
+
 
 public class DatabaseMain {
 
